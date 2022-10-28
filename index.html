@@ -1,0 +1,134 @@
+<!--Declaración de tipo de archivo-->
+<!DOCTYPE html>
+<!--Documento Raíz-->
+<html lang="es">
+    <head>
+    <!--Agregar Archivos Externos-->
+        <title>Apps de Gatos</title>
+    </head>
+    <body>
+    <!--body = Estructura de la Página-->
+
+    <!--Crear encabezados-->
+    <h1>¡Hola, mundo!</h1> <!--Nivel más grande de encabezado-->
+    <h2>¡Hola, mundo!</h2> <!--Etiqueta de apertura + contenido + etiqueta de cierre-->
+    <h3>¡Hola, mundo!</h3>
+    <h4>¡Hola, mundo!</h4>
+    <h5>¡Hola, mundo!</h5>
+    <h6>¡Hola, mundo!</h6>
+
+    <h1>AppDeGatos</h1>
+    <main>
+        <h3>Imágenes de Gatos:</h3>
+        <!--Así se escribe un comentario Comando: CTRL + K después CTRL + C-->
+        
+        <!--img = image, src = source-->
+        <img src="https://bit.ly/3N6uSMy" alt="gatito negro"> <!--imagen desde Internet--> 
+
+
+        <hr> <!--Etiqueta hr = Horizontal Rule-->
+
+        <h3>Listas de gatos</h3>
+
+
+        <div> <!--Elemento div-->
+            <p>Cosas que los gatos <strong> aman </strong>:</p> <!--strong para hacer la letra negrita-->
+            <!--em para hacer la letra cursiva-->
+            <p><em>Listas hechas por Nancy Salazar</em></p> 
+            <!--Listas no ordenadas-->
+            <!--ul = unordered list-->
+                <ul> 
+                    <li>Juguetes</li> <!--li = list item-->
+                    <li>Lasagna</li> 
+                    <li>Plantas</li> 
+                </ul> 
+                <img src="images/lasagna.jpg" alt="lasagna"> <!--imagen desde nuestro dispositivo-->
+
+                
+                <p>Cosas que los gatos <strong>odian</strong>:</p>
+                <!--Listas ordenadas-->
+                <ol> <!--ol = ordered list-->
+                    <li>Truenos</li> <!--li = list item-->
+                    <li><s>Otros gatos</s></li> <!--Etiqueta 's' para texto tachado-->
+                    <li>Tratamientos antipulgas</li> 
+                </ol> 
+        </div>
+            <img src="images/gatito.png" alt="gatito"> <!--imagen desde nuestro dispositivo-->
+
+
+         <!--Crear enlaces internos / Enlaces a Secciones Internas-->
+
+         <a href="#parrafo-1">Párrafo 1</a>
+         <a href="#parrafo-2">Párrafo 2</a>
+         <a href="#parrafo-3">Párrafo 3</a>
+         <a href="#parrafo-4">Parráfo 4</a>
+
+        <h3 id="parrafo-1">Párrafo 1</h3>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        
+        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+        <h3 id="parrafo-2">Párrafo 2</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <h3 id="parrafo-3">Párrafo 3</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <h3 id="parrafo-4">Párrafo 4</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+         <!--Crear enlaces externos-->
+        <p>En este link <a href="https://bit.ly/3zh6lyu" target="_blank" rel="noopener noreferrer">puedes ver más imágenes de gatos.</a></p>
+
+
+        <!--Enlaces con imágenes-->
+        <a href="https://www.hogarmania.com/mascotas/cinco-razones-para-adoptar-gato-negro.html" target="_blank"><img src="https://bit.ly/3N6uSMy" alt="gatito negro"></a>
+
+        <img src="images/lasagna.jpg" alt="lasagna">
+
+        <!--Crear enlaces con #. Enlaces muertos o dead links-->
+        <p>Visita nuestro <a href="#" rel="noopener noreferrer">nuevo sitio web aquí</a></p>
+
+            <!--Formulario-->
+            <form action="/enviar-respuesta">
+                <!--Texto y botón enviar-->
+                <input type="text" placeholder="URL de la foto de tu gato" required>
+                <br>
+                <button type="submit">Enviar</button>
+               
+                <!--Botones de radio-->
+                <p>¿Tu gato es cachorro o adulto?</p>
+                    <label for="cachorro">
+                        <input id="cachorro" type="radio" value="cachorro" name="cachorro-adulto" checked>Cachorro
+                    </label>
+                    <br>
+                    <label for="adulto">
+                        <input id="adulto" type="radio" value="adulto" name="cachorro-adulto">Adulto
+                    </label>
+                    <br>
+
+
+                <!--Casillas de verificación-->
+                <p>¿Qué tipo de gato es el tuyo?</p>
+                <label for="carinoso">
+                    <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked> Cariñoso
+                </label>
+                <br>
+                <label for="perezoso">
+                    <input id="perezoso" type="checkbox" value="perezoso" name="personalidad"> Perezoso
+                </label>
+                <br>
+                <label for="energico">
+                    <input id="energico" type="checkbox" value="energico" name="personalidad"> Enérgico
+                </label>
+                <br>         
+            </form>
+        </main>
+        <!--pie de página-->
+        <footer>
+            <!--Etiqueta small para que el pie de página se vea más pequeño-->
+            <p><small>derechos de autor - <a href="https://tecnolochicas.mx/" target="_blank">tecnolochicas.mx</a></small></p>
+        </footer>
+     </body>
+</html>
